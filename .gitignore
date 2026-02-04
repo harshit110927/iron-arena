@@ -1,0 +1,58 @@
+# Backend (Go)
+backend/vendor/
+backend/*.exe
+backend/*.exe~
+backend/*.dll
+backend/*.so
+backend/*.dylib
+backend/*.test
+backend/*.out
+backend/go.work
+backend/.env
+
+# Android
+android/.gradle
+android/.idea
+android/local.properties
+android/build/
+android/*/build/
+android/.DS_Store
+android/*.iml
+android/captures/
+android/.externalNativeBuild
+android/.cxx
+android/*.apk
+android/*.aab
+
+# iOS
+ios/*.xcworkspace
+ios/xcuserdata/
+ios/*.xcodeproj/xcuserdata/
+ios/*.xcodeproj/project.xcworkspace/xcuserdata/
+ios/.DS_Store
+ios/build/
+ios/DerivedData/
+ios/*.ipa
+ios/*.dSYM.zip
+ios/*.dSYM
+ios/Pods/
+ios/Podfile.lock
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Temporary files
+tmp/
+temp/
+*.tmp

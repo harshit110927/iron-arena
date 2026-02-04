@@ -1,0 +1,18 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXFileReference section */
+		IronArenaApp /* IronArenaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IronArenaApp.swift; sourceTree = "<group>"; };
+		ContentView /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		MainViewModel /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		User /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+	};
+	rootObject = ProjectRoot /* Project object */;
+}
