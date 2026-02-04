@@ -27,11 +27,19 @@ func main() {
 	}
 
 	// Initialize database connection
-	database, err := db.NewDatabase(cfg.DatabaseURL)
-	if err != nil {
-		log.Fatalf("Failed to connect to database: %v", err)
+	var database *db.Database
+	if cfg.DatabaseURL != "" {
+		var err error
+		database, err = db.NewDatabase(cfg.DatabaseURL)
+		if err != nil {
+			log.Printf("Warning: Failed to connect to database: %v", err)
+			database = nil
+		} else {
+			defer database.Close()
+		}
+	} else {
+		log.Println("Warning: Running without database connection (DATABASE_URL not set)")
 	}
-	defer database.Close()
 
 	// Initialize services
 	authService := services.NewAuthService(cfg, database)
